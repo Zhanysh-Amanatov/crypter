@@ -11,7 +11,7 @@ $medium: 1074px;
 
 .header-wrapper {
   height: 81px;
-  font-family: $sans-serif;
+  // font-family: $sans-serif;
   justify-content: space-evenly;
   @include flex;
 }
