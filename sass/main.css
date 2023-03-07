@@ -1,0 +1,150 @@
+.header-wrapper {
+  height: 81px;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+
+.header-section-1 {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name {
+  font-size: 24px;
+  line-height: 32px;
+  color: #f4f5f6;
+  position: relative;
+  left: -75px;
+}
+
+.divider-icon {
+  position: relative;
+  left: -30px;
+}
+@media screen and (max-width: 1074px) {
+  .divider-icon {
+    display: none;
+  }
+}
+
+.burger-icon {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .burger-icon {
+    display: inline;
+  }
+}
+
+.header-item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #777e90;
+  width: 100%;
+}
+@media screen and (max-width: 1074px) {
+  .header-item {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header-item {
+    display: none;
+  }
+}
+
+.header-section-2 {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 1074px) {
+  .header-section-2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header-section-2 {
+    display: none;
+  }
+}
+
+.search-wrapper {
+  width: 256px;
+  height: 40px;
+  border: 1px solid #777e90;
+  border-radius: 8px;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  background-color: #141416;
+  border: none;
+  color: #777e90;
+  text-align: start;
+  height: 38px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.bell-icon-new {
+  position: relative;
+  bottom: 20px;
+  right: 10px;
+}
+
+.header-btn-upload {
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 90px;
+  padding: 12px 16px;
+  background-color: #3772ff;
+  color: #fcfcfd;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.header-btn-connectWallet {
+  width: 137px;
+  height: 40px;
+  border: 2px solid #777e90;
+  border-radius: 90px;
+  padding: 12px 16px;
+  background-color: #141416;
+  color: #fcfcfd;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #141416;
+}
+
+a {
+  text-decoration: none;
+  color: 777000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+}/*# sourceMappingURL=main.css.map */

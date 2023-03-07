@@ -1,0 +1,119 @@
+//variables
+$sans-serif: "Poppins", sans-serif;
+$primary-color: #141416;
+$small: 800px;
+$medium: 1074px;
+//mixins
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  height: 81px;
+  font-family: $sans-serif;
+  justify-content: space-evenly;
+  @include flex;
+}
+.header-section-1 {
+  @include flex;
+  width: 40%;
+  justify-content: space-between;
+}
+.logo-wrapper {
+  @include flex;
+}
+.logo-name {
+  font-size: 24px;
+  line-height: 32px;
+  color: #f4f5f6;
+  position: relative;
+  left: -75px;
+}
+.divider-icon {
+  position: relative;
+  left: -30px;
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
+}
+.burger-icon {
+  display: none;
+  @media screen and (max-width: $small) {
+    display: inline;
+  }
+}
+.header-item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #777e90;
+  width: 100%;
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+}
+.header-section-2 {
+  @include flex;
+  width: 60%;
+  justify-content: space-evenly;
+  @media screen and (max-width: $medium) {
+    width: 100%;
+  }
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+}
+.search-wrapper {
+  width: 256px;
+  height: 40px;
+  border: 1px solid #777e90;
+  border-radius: 8px;
+  justify-content: space-evenly;
+  @include flex;
+}
+.search-input {
+  background-color: $primary-color;
+  border: none;
+  color: #777e90;
+  text-align: start;
+  height: 38px;
+}
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+.bell-icon-new {
+  position: relative;
+  bottom: 20px;
+  right: 10px;
+}
+.header-btn-upload {
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 90px;
+  padding: 12px 16px;
+  background-color: #3772ff;
+  color: #fcfcfd;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+.header-btn-connectWallet {
+  width: 137px;
+  height: 40px;
+  border: 2px solid #777e90;
+  border-radius: 90px;
+  padding: 12px 16px;
+  background-color: $primary-color;
+  color: #fcfcfd;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
