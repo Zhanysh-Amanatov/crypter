@@ -1034,4 +1034,161 @@ body {
 
 .card-name-number-group {
   text-align: center;
+}
+
+.main-section5 {
+  height: 826px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section5-part1 {
+  width: 1120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1074px) {
+  .section5-part1 {
+    width: 864px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section5-part1 {
+    width: 311px;
+  }
+}
+
+.part1-text {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fcfcfd;
+}
+
+.part1-arrow-group {
+  display: flex;
+  align-items: center;
+  width: 88px;
+  justify-content: space-evenly;
+}
+
+.part1-arrow-right {
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #777e90;
+}
+
+.section5-part2 {
+  display: flex;
+  align-items: center;
+  width: 1120px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1074px) {
+  .section5-part2 {
+    width: 864px;
+    overflow-x: hidden;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section5-part2 {
+    width: 350px;
+  }
+}
+
+.section5-part2::-webkit-scrollbar {
+  width: 0;
+}
+
+.section5-part2-card-group {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img {
+  width: 256px;
+  height: 302px;
+  border-radius: 16px;
+}
+
+.card-header-number-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 256px;
+}
+
+.card-header {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fcfcfd;
+}
+
+.card-avatar-text-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 256px;
+}
+
+.section5-card-avatar1 {
+  width: 24px;
+  border-radius: 48px;
+  background-color: #9757d7;
+  border: 2px solid #23262f;
+}
+
+.section5-card-avatar2 {
+  width: 24px;
+  border-radius: 48px;
+  background-color: #ef466f;
+  border: 2px solid #23262f;
+  position: relative;
+  right: 15px;
+}
+
+.section5-card-avatar3 {
+  width: 24px;
+  border-radius: 48px;
+  background-color: #45b26b;
+  border: 2px solid #23262f;
+  position: relative;
+  right: 30px;
+}
+
+.card-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fcfcfd;
+}
+
+.card-bottom-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 256px;
+}
+
+.card-icon-highestBid-number-group {
+  display: flex;
+  align-items: center;
+  width: 152px;
+  justify-content: space-between;
+}
+
+.card-bid {
+  font-size: 12px;
+  font-weight: 400;
+  color: #777e90;
+}
+
+.card-number {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fcfcfd;
 }/*# sourceMappingURL=main.css.map */

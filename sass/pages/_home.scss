@@ -495,7 +495,7 @@ $medium: 1074px;
   background-color: #fcfcfd;
   border-radius: 64px;
 }
-.part3-card-name-number-group{
+.part3-card-name-number-group {
   width: 152px;
 }
 .part3-card-name {
@@ -699,4 +699,145 @@ $medium: 1074px;
 }
 .card-name-number-group {
   text-align: center;
+}
+//--Section5
+.main-section5 {
+  height: 826px;
+  @include flex;
+  flex-direction: column;
+}
+//--Section5-part1
+.section5-part1 {
+  width: 1120px;
+  @include flex;
+  justify-content: space-between;
+  @media screen and (max-width: $medium) {
+    width: 864px;
+  }
+  @media screen and (max-width: $small) {
+    width: 311px;
+  }
+}
+.part1-text {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fcfcfd;
+}
+.part1-arrow-group {
+  @include flex;
+  width: 88px;
+  justify-content: space-evenly;
+}
+.part1-arrow-right {
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #777e90;
+}
+//--Section5-part2
+.section5-part2 {
+  @include flex;
+  width: 1120px;
+  justify-content: space-between;
+  @media screen and (max-width: $medium) {
+    width: 864px;
+    overflow-x: hidden;
+    gap: 40px;
+  }
+  @media screen and (max-width: $small) {
+    width: 350px;
+  }
+}
+.section5-part2::-webkit-scrollbar {
+  width: 0;
+}
+.section5-part2-card-group {
+  height: 450px;
+  @include flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-img {
+  width: 256px;
+  height: 302px;
+  border-radius: 16px;
+}
+// Card2 "purchasing!" & "addToWishList"
+// .card2-icons-overlay{
+//   @include flex;
+//   justify-content: space-between;
+//   width: 240px;
+//   position: relative;
+//   z-index: 2;
+//   bottom: 300px;
+// }
+// .card2-purchasing{
+//   font-size: 12px;
+//   font-weight: 700;
+//   text-transform: uppercase;
+//   padding: 8px 8px 6px 8px;
+//   border-radius: 4px;
+//   background-color: #45B26B;
+//   color: #fcfcfd;
+// }
+.card-header-number-group {
+  @include flex;
+  justify-content: space-between;
+  width: 256px;
+}
+.card-header {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fcfcfd;
+}
+.card-avatar-text-group {
+  @include flex;
+  justify-content: space-between;
+  width: 256px;
+}
+.section5-card-avatar1 {
+  width: 24px;
+  border-radius: 48px;
+  background-color: #9757d7;
+  border: 2px solid #23262f;
+}
+.section5-card-avatar2 {
+  width: 24px;
+  border-radius: 48px;
+  background-color: #ef466f;
+  border: 2px solid #23262f;
+  position: relative;
+  right: 15px;
+}
+.section5-card-avatar3 {
+  width: 24px;
+  border-radius: 48px;
+  background-color: #45b26b;
+  border: 2px solid #23262f;
+  position: relative;
+  right: 30px;
+}
+.card-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fcfcfd;
+}
+.card-bottom-part {
+  @include flex;
+  justify-content: space-between;
+  width: 256px;
+}
+.card-icon-highestBid-number-group {
+  @include flex;
+  width: 152px;
+  justify-content: space-between;
+}
+.card-bid {
+  font-size: 12px;
+  font-weight: 400;
+  color: #777e90;
+}
+.card-number {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fcfcfd;
 }
