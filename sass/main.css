@@ -1088,7 +1088,7 @@ body {
 @media screen and (max-width: 1074px) {
   .section5-part2 {
     width: 864px;
-    overflow-x: hidden;
+    overflow: hidden;
     gap: 40px;
   }
 }
@@ -1096,10 +1096,6 @@ body {
   .section5-part2 {
     width: 350px;
   }
-}
-
-.section5-part2::-webkit-scrollbar {
-  width: 0;
 }
 
 .section5-part2-card-group {
@@ -1191,4 +1187,120 @@ body {
   font-size: 12px;
   font-weight: 600;
   color: #fcfcfd;
+}
+
+.main-section6 {
+  color: #fdfdfd;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #23262f;
+  height: 789px;
+  justify-content: center;
+}
+@media screen and (max-width: 1074px) {
+  .main-section6 {
+    width: 1024px;
+    height: 725px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main-section6 {
+    width: 375px;
+    height: 685px;
+  }
+}
+
+.section6-part1 {
+  display: flex;
+  align-items: center;
+  width: 1120px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1074px) {
+  .section6-part1 {
+    width: 864px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section6-part1 {
+    width: 360px;
+    justify-content: center;
+  }
+}
+
+.section6-part2 {
+  display: flex;
+  align-items: center;
+  width: 1120px;
+  height: 500px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1074px) {
+  .section6-part2 {
+    width: 864px;
+    overflow: hidden;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section6-part2 {
+    width: 360px;
+  }
+}
+
+.section6-part2-card-group {
+  width: 352px;
+  height: 405px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section6-card-part1-img {
+  width: 352px;
+  height: 240px;
+  border-radius: 12px;
+}
+
+.card-part2-img-group {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card-part2-img {
+  border-radius: 8px;
+}
+
+.card-part3-header {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-part4-items-group {
+  display: flex;
+  align-items: center;
+  width: 352px;
+  justify-content: space-between;
+}
+
+.card-part4-avatar-name-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-part4-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-part4-items {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 8px 6px 8px;
+  border: 2px solid #fcfcfd;
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */
