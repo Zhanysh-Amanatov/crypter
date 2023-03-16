@@ -300,8 +300,10 @@ $medium: 1074px;
 //--Section3
 .main-section3 {
   @include flex;
+  height: 640px;
   justify-content: space-evenly;
   @media screen and (max-width: $medium) {
+    height: 756px;
     flex-direction: column;
     justify-content: center;
   }
@@ -516,4 +518,178 @@ $medium: 1074px;
   @media screen and (max-width: $medium) {
     display: none;
   }
+}
+// //--Section4
+.main-section4 {
+  width: 100%;
+  height: 663px;
+  background-color: #23262f;
+  @include flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @media screen and (max-width: $medium) {
+    height: 687px;
+  }
+  @media screen and (max-width: $small) {
+    height: 655px;
+  }
+}
+.section4-part1 {
+  width: 1120px;
+  @include flex;
+  justify-content: space-between;
+  @media screen and (max-width: $medium) {
+    width: 864px;
+  }
+  @media screen and (max-width: $small) {
+    width: 311px;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.part1-left-text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 5px;
+}
+.part1-left-text1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #777e90;
+}
+.part1-left-text2-arrow-group {
+  @include flex;
+  gap: 10px;
+}
+.part1-left-text2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fcfcfd;
+}
+.part1-left-arrow {
+  width: 10px;
+}
+.part1-right-text-group {
+  @include flex;
+  flex-direction: column;
+  text-align: start;
+}
+.part1-right-text1 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #b1b5c3;
+  text-transform: uppercase;
+  position: relative;
+  right: 100px;
+}
+.part1-right-text2-arrow-group {
+  @include flex;
+  justify-content: space-between;
+  width: 256px;
+  height: 32px;
+  padding: 8px 8px 8px 16px;
+  border-radius: 12px;
+  border: 2px solid #777e90;
+}
+.part1-right-text2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fcfcfd;
+}
+.part1-right-arrow {
+  width: 8px;
+  padding: 10px;
+  color: #2553c8;
+  border-radius: 50%;
+  border: 2px solid #353945;
+}
+.section4-part2 {
+  @include flex;
+  width: 1264px;
+  height: 263px;
+  justify-content: space-evenly;
+
+  @media screen and (max-width: $medium) {
+    width: 864px;
+    height: 319px;
+    overflow-x: hidden;
+    gap: 20px;
+    justify-content: start;
+  }
+  @media screen and (max-width: $small) {
+    width: 311px;
+  }
+}
+.arrow-group {
+  @media screen and (max-width: $medium) {
+    @include flex;
+    width: 104px;
+    justify-content: space-evenly;
+  }
+}
+.part2-arrowLeft {
+  position: relative;
+  bottom: 240px;
+  right: 650px;
+  @media screen and (max-width: $medium) {
+    bottom: 0px;
+    right: 0px;
+  }
+}
+.part2-arrowRight {
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #777e90;
+  position: relative;
+  bottom: 240px;
+  left: 650px;
+  @media screen and (max-width: $medium) {
+    bottom: 0px;
+    left: 0px;
+  }
+}
+.section4-part2-card-group {
+  min-width: 199px;
+  height: 247px;
+  border-radius: 16px;
+  background-color: #141416;
+  @include flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  @media screen and (max-width: $medium) {
+  }
+}
+.card-icons-group {
+  @include flex;
+  width: 150px;
+  justify-content: space-between;
+}
+.card-logo-group {
+  @include flex;
+  justify-content: space-evenly;
+  width: 51px;
+  height: 24px;
+  padding: 2px 8px;
+  border-radius: 24px;
+  background-color: #3772ff;
+}
+.card-logo-icon {
+  width: 16px;
+}
+.card-logo-number {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fcfcfd;
+}
+.card-avatar {
+  width: 64px;
+  border-radius: 48px;
+}
+.card-diamond-icon {
+  position: relative;
+  right: 25px;
+  top: 10px;
+}
+.card-name-number-group {
+  text-align: center;
 }
