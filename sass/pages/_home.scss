@@ -447,10 +447,8 @@ $medium: 1074px;
     justify-content: center;
   }
   @media screen and (max-width: $small) {
-    align-items: baseline;
-    max-width: 511px;
-    position: relative;
-    right: 100px;
+    width: 311px;
+    overflow-x: hidden;
   }
 }
 .part3-header-text {
@@ -460,18 +458,24 @@ $medium: 1074px;
   @media screen and (max-width: $medium) {
     text-align: left;
   }
+  @media screen and (max-width: $small) {
+    margin-left: 10px;
+  }
 }
 .part3-card-container {
   @media screen and (max-width: $medium) {
     @include flex;
+    width: 864px;
   }
   @media screen and (max-width: $small) {
-    margin-left: 200px;
+    margin-left: 10px;
   }
 }
 .part3-card-group {
   @include flex;
   width: 224px;
+  @media screen and (max-width: $small) {
+  }
 }
 .part3-img-group {
   @include flex;
@@ -490,6 +494,9 @@ $medium: 1074px;
   right: 60px;
   background-color: #fcfcfd;
   border-radius: 64px;
+}
+.part3-card-name-number-group{
+  width: 152px;
 }
 .part3-card-name {
   color: #fcfcfd;
