@@ -8,7 +8,7 @@ $medium: 1074px;
   display: flex;
   align-items: center;
 }
-.home-main{
+.home-main {
   @include flex;
   flex-direction: column;
 }
@@ -1096,4 +1096,116 @@ $medium: 1074px;
   border: 2px solid #777e90;
   font-size: 14px;
   font-weight: 700;
+}
+//--Section8
+.main-section8 {
+  width: 100%;
+  height: 800px;
+  @include flex;
+  justify-content: center;
+  @media screen and (max-width: $medium) {
+    width: 1024px;
+    height: 576px;
+  }
+  @media screen and (max-width: $small) {
+    width: 375px;
+    height: 891px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+//-Section8-part1
+.section8-part1 {
+  width: 480px;
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (max-width: $medium) {
+    width: 416px;
+    height: 352px;
+  }
+  @media screen and (max-width: $small) {
+    width: 311px;
+    height: 260px;
+    text-align: center;
+  }
+}
+.part1-text1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #777e90;
+  text-transform: uppercase;
+  @media screen and (max-width: $small) {
+    font-size: 12px;
+  }
+}
+.part1-text2 {
+  width: 545px;
+  font-size: 64px;
+  font-weight: 700;
+  color: #fcfcfd;
+  margin: 0px;
+  @media screen and (max-width: $medium) {
+    width: 416px;
+  }
+  @media screen and (max-width: $small) {
+    font-size: 48px;
+    width: 311px;
+  }
+}
+.part1-text3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #777e90;
+}
+.part1-buttons-group {
+  width: 295px;
+  @include flex;
+  justify-content: space-between;
+  @media screen and (max-width: $small) {
+    width: 311px;
+    height: 130px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.part1-button1 {
+  width: 119px;
+  height: 48px;
+  border-radius: 90px;
+  background-color: #3772ff;
+  color: #fcfcfd;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  @media screen and (max-width: $small) {
+    width: 311px;
+  }
+}
+.part1-button2 {
+  width: 160px;
+  height: 48px;
+  border-radius: 90px;
+  background-color: #141416;
+  color: #fcfcfd;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid #777e90;
+  @media screen and (max-width: $small) {
+    width: 311px;
+  }
+}
+//-Section8-part2
+.section8-part2 {
+  width: 640px;
+  height: 640px;
+  @media screen and (max-width: $medium) {
+    width: 416px;
+    height: 416px;
+  }
+  @media screen and (max-width: $small) {
+    width: 311px;
+    height: 311px;
+  }
 }
