@@ -1,0 +1,128 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-wrapper{
+      color: #fcfcfd;
+      display: flex;
+      // @include flex;
+      flex-direction: column;
+      height: 400px;
+      width: 100%;
+      justify-content: space-evenly;
+      @media screen and (max-width: $medium) {
+        width: 1024px;
+      }
+      @media screen and (max-width: $small) {
+        // width: 375px;
+        height: 1000px;
+        background-color: #23262F;
+        // margin: 0px;
+      // justify-content: center;
+      align-items: center;
+      }
+  }
+  .footer-part1{
+      width: 100%;
+      // width: 1120px;
+      height: 184px;
+      @include flex;
+      justify-content: space-evenly;
+      @media screen and (max-width: $small) {
+        flex-direction: column;
+        height: 779px;
+        width: 375px;
+      }
+    }
+    .footer-part1-1{
+        width: 352px;
+        height: 128px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-part1-1-text{
+        width: 256px;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0px;
+  }
+  .footer-part1-2{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .part1-2-text{
+    font-size: 16px;
+    font-weight: 500;    
+  }
+  .part1-2-links{
+    display: flex;
+    align-items: flex-start;
+    // @include flex;
+    flex-direction: column;
+    height: 96px;
+    justify-content: space-between;
+  }
+  .footer-item{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #777e90;
+    // width: 100%;
+  }
+  .footer-part1-4{
+    display:  flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .part1-4-text{
+    width: 352px;
+    font-size: 14px;
+    font-weight: 400;
+    color:#E6E8EC;
+  }
+  .part1-4-email{
+    @include flex;
+    justify-content: space-evenly;
+    width: 352px;
+    height: 48px;
+    border: 2px solid #353945;
+    border-radius: 90px;
+  }
+  .part1-4-emailInput{
+    width: 278px;
+    height: 20px;
+    font-size: 12px;
+    color: #777E90;
+    background-color: #141416;
+    border: none;
+    @media screen and (max-width: $small) {
+      background-color: #23262F;
+
+    }
+  }
+  .emailInput-btn{
+    color: #fcfcfd;
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background-color: #3772FF;
+    color: #fcfcfd;
+    padding:0px;
+    border: none
+  }
+  .footer-part3{
+    font-size: 12px;
+    color: #777E90;
+    width: 1120px;
+    @include flex;
+    @media screen and (max-width: $small) {
+      justify-content: center;
+    }
+  }
