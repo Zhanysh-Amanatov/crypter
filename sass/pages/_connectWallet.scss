@@ -1,0 +1,112 @@
+$small: 900px;
+// $small: 375px;
+$medium: 1074px;
+// $medium: 1024px;
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+.main-connectWallet {
+  color: #fcfcfd;
+  height: 1018px;
+  width: 100%;
+  @include flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  @media screen and (max-width: $small) {
+    height: 812px;
+  }
+}
+.connectWallet-section1 {
+  @include flex;
+  // display: flex;
+  // align-items: flex-start;
+  // width: 1120px;
+  // height: 98px;
+  gap: 50px;
+  @media screen and (max-width: $small) {
+    width: 311px;
+    gap: 25px;
+  }
+}
+.connectWallet-section1-text {
+  // color: #FCFCFD;
+  font-size: 48px;
+  font-weight: 700;
+  @media screen and (max-width: $small) {
+    font-size: 24px;
+  }
+}
+.connetWallet-section2 {
+  @include flex;
+  gap: 50px;
+}
+.connectWallet-section2-part1 {
+  @include flex;
+  flex-direction: column;
+  width: 544px;
+  height: 512px;
+  @media screen and (max-width: $medium) {
+    width: 384px;
+  }
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+}
+.connectWallet-section2-part1-card {
+  @include flex;
+  gap: 20px;
+  width: 544px;
+  height: 128px;
+  @media screen and (max-width: $medium) {
+    width: 384px;
+  }
+}
+.connectWallet-section2-part1-card-padding {
+  @include flex;
+  gap: 20px;
+  width: 544px;
+  height: 128px;
+  padding: 0px 10px;
+  border: 1px solid #353945;
+  border-radius: 16px;
+  @media screen and (max-width: $medium) {
+    width: 384px;
+  }
+}
+.connectWallet-section2-part2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (max-width: $medium) {
+    width: 375px;
+  }
+}
+.connectWallet-section2-part2-text1 {
+  font-size: 40px;
+  font-weight: 700;
+  @media screen and (max-width: $small) {
+    font-size: 32px;
+  }
+}
+.connectWallet-section2-part2-text2 {
+  font-size: 12px;
+  color: #777e90;
+}
+.connectWallet-section2-part2-img {
+  @media screen and (max-width: $medium) {
+    width: 416px;
+  }
+  @media screen and (max-width: $small) {
+    width: 311px;
+  }
+}
+.connectWallet-section2-part2-btn {
+  width: 199px;
+  height: 52px;
+  border: 1px solid #353945;
+  border-radius: 90px;
+  background-color: #141416;
+  color: #fcfcfd;
+  font-weight: 600;
+}
